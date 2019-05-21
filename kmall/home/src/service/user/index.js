@@ -1,0 +1,69 @@
+var _util = require('util')
+
+var _user = {
+	//用户退出
+	logout:function(success,error){
+		_util.request({
+			url:'/user/logout',
+			success:success,
+			error:error
+		})		
+	},
+	//用户登录
+	login:function(data,success,error){
+		_util.request({
+			method:'post',
+			url:'/user/login',
+			data:data,
+			success:success,
+			error:error
+		})
+	},
+	//用户注册
+	register:function(data,success,error){
+		_util.request({
+			method:'post',
+			url:'/user/register',
+			data:data,
+			success:success,
+			error:error
+		})
+	},
+	getUsername:function(success,error){
+		_util.request({
+			url:'/user/username',
+			success:success,
+			error:error
+		})	
+	},
+	//验证用户名是否已存在
+	checkUsername:function(username,success,error){
+		_util.request({
+			url:'/user/checkUsername',
+			data:{
+				username:username
+			},
+			success:success,
+			error:error
+		})
+	},
+	getUserInfo:function(success,error){
+		_util.request({
+			url:'/user/userInfo',
+			success:success,
+			error:error
+		})
+	},
+	//修改密码
+	updatePassword:function(data,success,error){
+		_util.request({
+			method:'put',
+			url:'/user/updatePassword',
+			data:data,
+			success:success,
+			error:error
+		})
+	}
+}
+
+module.exports = _user;

@@ -1,0 +1,367 @@
+.header{
+	width: 100%;
+	height: 140px;
+	background: #fff;
+}
+.header .top{
+	width: 1224px;
+	height: 98px;
+	line-height: 98px;
+	border-bottom: 2px solid #f3f2f0;
+	margin: 0 auto;
+}
+.header .top img{
+	float: left;
+	width: 42px;
+	height: 42px;
+	margin: 30px 90px 0 0;
+}
+.header .top .ul1{
+	float: left;
+	width: 860px;
+	height: 98px;
+	line-height: 98px;
+	box-sizing: border-box;
+}
+.header .top .ul1 li{
+	float: left;
+	margin-right:46px;
+}
+.header .top .ul1 li a{
+	font-size: 13px;
+	color: #989897;
+	transition: all 0.3s;
+}
+.header .top .ul1 li:last-child{
+	margin-right: 0;
+}
+.header .top .ul1 li a:hover{
+	color: #000;
+	font-weight: bold;
+}
+.header .top .shopp{
+	float: right;
+	width: 115px;
+	height: 98px;
+	line-height: 98px;
+}
+.header .top .shopp span{
+	display: inline-block;
+	float: left;
+	margin-right:39px;
+	color: #cccccc;
+}
+.header .top .shopp a{
+	display: inline-block;
+	float: left;
+	margin-right:39px;
+	color: #6b6b6b;
+}
+.header .top .shopp a:last-child{
+	margin-right: 0;
+}
+
+
+.header .oneself{
+	width: 1224px;
+	margin: 0 auto;
+}
+.header .oneself .ul2 li{
+	float:left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 11px;
+	margin-right: 30px;
+}
+.header .oneself .ul2 li:last-child{
+	float:right;
+}
+.oneself .ul2 .survey{
+	color: #4d4d4d;
+	cursor: pointer;
+}
+.oneself .ul2 .skill{
+	color: #4d4d4d;
+	cursor: pointer;
+}
+.oneself .ul2 .shopping{
+	display: inline-block;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	font-size: 11px;
+	background:#5e8bf2;
+	text-align: center;
+	border:1px solid #4e77e9;
+	border-radius: 3px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.active{
+	color: #000;
+	font-weight: bold;
+}
+
+.oneself2{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	box-shadow:0px 5px 8px rgba(0,0,0,0.2);
+	display: none;
+	background: #eee;
+}
+.oneself2 .box99{
+	width: 1224px;
+	height: 40px;
+	line-height: 40px;
+	margin:0 auto;
+
+}
+.oneself2 .box99 .span1{
+	font-size: 20px;
+	color: #aaa;
+	margin-right: 70px;
+}
+.oneself2 .box99 .span2,
+.oneself2 .box99 .span3{
+	font-size: 11px;
+	margin-right: 30px;
+	color: #4d4d4d;
+	cursor: pointer;
+}
+
+.oneself2 .box99 .span4{
+	float: right;
+	margin-right: 0;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	font-size: 11px;
+	background:#5e8bf2;
+	margin-top: 6px;
+	text-align: center;
+	border:1px solid #4e77e9;
+	border-radius: 3px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+.main img{
+	width:100%;
+	margin-bottom: -4px;
+}
+
+.main2{
+	background: #fff;
+	display: none;
+}
+.main2 div{
+	width:1224px;
+	margin:0 auto;
+}
+.main2 .div1{
+	width: 100%;
+	height: 100%;
+}
+.main2 div img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#box3{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 45px;
+	height: 45px;
+	/*height: 0px;*/
+	line-height:45px;
+	text-align: center;
+	border-radius: 8px;
+	background: #fff;
+	border: 1px solid #ccc;
+	display: none;
+	overflow: hidden;
+}
+#box3 span{
+	color:#ccc;
+	font-size: 12px;
+}
+
+.box6{
+	width: 100%;
+	height: 345px;
+	background: #fff;
+	margin-top: 30px;
+	position:relative;
+}
+.box6 .footer{
+	width: 1220px;
+	margin: 0 auto;
+	border-bottom:1px solid #e6e6e6;
+}
+.box6 .footer .map{
+	float: left;
+	width: 795px;
+	height: 215px;
+}
+.box6 .footer .map dl{
+	float: left;
+	margin-top: 60px;
+	margin-right: 100px;
+}
+.box6 .footer .map dl:last-child{
+	margin-right: 0px;
+}
+.footer .map dl dt{
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 28px;
+}
+.footer .map dl dd a{
+	display: block;
+	margin-top: 17px;
+	font-size: 11px;
+	color: #969696;
+}
+.footer .map dl dd a:hover{
+	color: #5079d9;
+}
+.box6 .footer .help{
+	float: right;
+	width:157px;
+	height: 215px;
+	text-align: right;
+	position: relative;
+}
+.box6 .footer .help .p1{
+	font-size: 16px;
+	font-weight:999;
+	color: #5079d9;
+	margin: 60px 0 12px 0;
+
+}
+.box6 .footer .help p{
+	font-size: 11px;
+	color: #999999;
+}
+.box6 .footer .help .p3{
+	margin: 8px 0 17px 0;
+}
+.box6 .footer .help a{
+	position: absolute;
+	right: 0;
+	bottom: 35px;
+	display: block;
+	width: 125px;
+	height: 32px;
+	line-height: 32px;
+	border:1px solid #d0d0d0;
+	border-radius: 3px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.box6 .footer .help a i{
+	font-size: 12px;
+	font-weight: bold;
+	color: #5079de;
+}
+.box6 .end{
+	width: 1220px;
+	height:128px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+.box6 .end .ul1{
+	width: 738px;
+	margin-top: 30px;
+	margin-bottom: 8px;
+}
+.box6 .end ul li{
+	float: left;
+	margin-right: 3px;
+	font-size: 11px;
+	color: #bdbdbd;
+}
+.box6 .end ul li a{
+	color: #bdbdbd;
+}
+.box6 .end .ul1 li a:hover{
+	color: #5079de;
+}
+.box6 .end ul li span{
+	margin: 0 7px;
+}
+.box6 .end .ul2 li{
+	margin-right: 21px;
+}
+
+
+
+.div99{
+	position: absolute;
+	left: 1300px;
+	top:230px;
+	width: 120px;
+	height: 50px;
+	line-height:50px;
+	cursor: pointer;
+	text-align: center;
+}
+.div99 img{
+	vertical-align:middle;
+}
+.div99 i{
+	font-size:12px;
+	color: #bdbdbd;	
+}
+.div99 span{
+	font-size: 8px;
+	margin: 0 8px 0 8px;
+}
+.box11{
+	display: none;
+}
+.father{
+	position: absolute;
+	right: 170px;
+	bottom:70px;
+	width: 120px;
+	height: 100px;
+	border:1px solid #fff;
+	background: #fff;
+	border-radius:5px;
+	box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+	display: none;
+}
+.father div{
+	width: 120px;
+	height: 50px;
+	line-height:50px;
+	cursor: pointer;
+	text-align: center;
+}
+.father i{
+	font-size:12px;
+	color: #bdbdbd;	
+}
+.father span{
+	font-size: 8px;
+	vertical-align:top;
+	margin: 0 8px 0 8px;
+}
+.father .box8{
+	border-top: 1px solid #ccc;
+}

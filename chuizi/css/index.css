@@ -1,0 +1,69 @@
+body{
+	background-color: #ededed;
+}
+.top{
+	width: 100%;
+	height: 45px;
+	background: #343538;
+}
+
+.header{
+	width: 100%;
+	height: 75px;
+	background: yellow;
+}
+.home{
+	width: 1224px;
+	height: 500px;
+	background: blue;
+	margin:25px auto 0 auto;
+}
+.main{
+	width: 1224px;
+	height: 205px;
+	background:gray;
+	margin:25px auto 0 auto;
+}
+.hot{
+	width: 1224px;
+	height: 490px;
+	background:pink;
+	margin:25px auto 0 auto;
+}
+.new{
+	width: 1224px;
+	height: 920px;
+	background: green;
+	margin:25px auto 0 auto;
+}
+
+.tupian{
+	width: 1224px;
+	height: 205px;
+	background: skyblue;
+	margin:25px auto 0 auto;
+}
+.apply{
+	width: 1224px;
+	height: 378px;
+	background: orange;
+	margin:25px auto 0 auto;
+}
+.forum{
+	width: 1224px;
+	height: 378px;
+	background: yellow;
+	margin:25px auto 0 auto;
+}
+.footer{
+	width: 1224px;
+	height: 225px;
+	background: purple;
+	margin:25px auto 0 auto;
+}
+.end{
+	width: 1224px;
+	height: 130px;
+	background: orange;
+	margin: 0 auto;
+}

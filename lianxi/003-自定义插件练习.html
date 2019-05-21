@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<titl></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<button>点击获取</button>
+	<div></div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	;(function($){
+		$.fn.extend({
+			setCss:function(key,val){
+				return this.each(function(){
+					var $this=$(this);
+					if(!val){
+						console.log($this.css(key))
+					}else{
+						console.log($this.css(key,val))
+					}
+				})
+			}
+		})
+	})(jQuery);
+</script>
+<script>
+	var $Div=$('div');
+	$('button').on('click',function(){
+		$Div.setCss('width',100);
+	})
+</script>
+</html>

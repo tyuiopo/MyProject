@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html进阶练习</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box1{
+			position: absolute;
+			left: 50%;
+			margin-left: -150px;
+			top:50%;
+			margin-top: -150px;
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			margin-bottom: 0;
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2" draggable=true></div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	$('.box1')
+	.on('dragover',function(ev){
+		ev.preventDefault();
+	})
+	.on('drop',function(){
+		$(this).append($('.box2'));
+	})
+	.on('dragend',function(){
+		alert('已完成拖拽')
+	})
+	// $('.box2').on('dragend',function(){
+	// 	// $('.box1').css.margin='200px auto';
+	// 	alert('已完成拖拽')
+	// })
+</script>
+</html>

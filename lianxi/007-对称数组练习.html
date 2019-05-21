@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对称数组练习</title>
+</head>
+<body>
+	
+</body>
+<script>
+	function num(stort,end){
+		var arr=[];
+		for(var i=0;i<end;i++){
+			var num2=i;
+			var num3=i.toString().split('').reverse ().join('');
+			if(num2==num3){
+				arr.push(num3);
+			}
+		}
+		return arr;
+	}
+	var sjhdj=	num(1,10000)
+	console.log(sjhdj);
+</script>
+</html>

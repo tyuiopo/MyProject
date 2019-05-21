@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定义构造函数</title>
+</head>
+<body>
+	
+</body>
+<script>
+	class Teacher{
+		constructor(name,age){
+			this.name=name;
+			this.age=age
+		}
+		sayName(){
+			console.log('I am '+this.name)
+		}
+		sayAge(){
+			console.log('I am '+this.age)
+		}
+		static
+		sayHi(){
+			console.log('hello....')
+		}
+	}
+	let T=new Teacher('tom',28);
+	console.log(T)
+	Teacher.sayHi();
+
+
+	class Student extends Teacher{
+		constructor(name,age,major){
+			super(name,age);
+			this.major=major;
+		}
+		major(){
+			console.log('I am lick'+this.major)
+		}
+		static
+		sayGood(){
+			console.log('Good')
+		}
+	}
+	Student.sayHi=Teacher.sayHi;
+	let S=new Student('leo',18,'basketball')
+	console.log(S);
+	Student.sayGood();
+	Student.sayHi();
+</script>
+</html>

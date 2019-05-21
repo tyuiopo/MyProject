@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="screen"></div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+  (function() {
+  var parents = $('#screen');
+  var triggerMethod = function () {
+    var block = parents.find('.block');
+    var length = block.length;
+    var temp = {};
+    block.each(function (index, node) {
+        var i = $(node).attr('data-index');
+        var color = $(node).find('.block-inner').attr('style');
+        if (!temp[color]) {
+          temp[color] = 1;
+        } else {
+          temp[color] = temp[color]+=1;
+        }
+        $(node).attr('data-color',  color);
+        // console.log(temp)
+    });
+    var color;
+    for(var i in temp) {
+      // console.log(i, temp[i])
+      if (temp[i] == 1) {
+        color = i;
+        break;
+      }
+    }
+    // console.log(color)
+    parents.find('[data-color="'+color+'"]').trigger('click');
+  }
+
+  $('#start').trigger('click');
+  var time = $('#timer');
+  var siv = setInterval(function () {
+    if (time.text() <= 0) {
+      clearInterval(siv);
+      return;
+    }
+    triggerMethod();
+  }, 30);
+})();
+
+</script>
+</html>

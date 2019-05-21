@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>插件练习测试</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 150px;
+			height: 150px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<button>点击</button>
+	<div></div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/kjalkjdj.js"></script>
+<script>
+	var $elem=$('div');
+	$('button').on('click',function(){
+		$elem.setBox($elem,{
+			left:300,
+			top:100
+		})
+	})
+</script>
+</html>

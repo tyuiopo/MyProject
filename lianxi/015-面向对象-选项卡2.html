@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		#tab-list{
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		#tab-list li,
+		#tab-list1 li{
+			float: left;
+			width: 40px;
+			height: 40px;
+			margin-left: 20px;
+			line-height: 40px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#tab-container li,
+		#tab-container1 li{
+			width: 400px;
+			height: 400px;
+			line-height: 400px;
+			border: 1px solid #000;
+			font-size: 100px;
+			text-align: center;
+			display: none;
+		}
+		#tab-list .active,
+		#tab-list1 .active{
+			color: #ff6700;
+			border-bottom: 2px solid #ff6700;
+		}
+		#tab-container .show,
+		#tab-container1 .show{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul id="tab-list">
+		<li class="active">电脑</li>
+		<li>手机</li>
+		<li>电视</li>
+		<li>净化器</li>
+	</ul>
+	<ul id="tab-container">
+		<li class="show">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+<script>
+	function Tab(){
+		//罗列属性
+		this.oBtn=document.querySelectorAll('#tab-list li');
+		this.oContent=document.querySelectorAll('#tab-container li');
+		//绑定事件
+		this.bindEvent();
+	}
+	Tab.prototype.bindEvent=function(){
+		var _this=this;
+		for(var i=0;i<this.oBtn.length;i++){
+			this.oBtn[i].index=i;
+			this.oBtn[i].onclick=function(){
+				_this.fnClick(this);
+			}
+		}
+	}
+	Tab.prototype.fnClick=function(dj){
+		for(var j=0;j<this.oBtn.length;j++){
+			this.oBtn[j].className='';
+			this.oContent[j].style.display='none';
+		}
+		// this.oBtn.className='active';
+		dj.className='active';
+		this.oContent[dj.index].style.display='block';
+	}
+	new Tab();
+</script>
+</html>

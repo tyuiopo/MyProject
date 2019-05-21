@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>点击改变</button>
+	<div class="box">
+		<ul class="list">
+			<li class="item1">li1</li>
+			<li class="item3">li3</li>
+			<li class="item7">li7</li>
+			<li class="item5">li5</li>
+		</ul>
+	</div>
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	$(function(){
+		$('button').on('click',function(){
+			var $Li0=$('<li>li0</li>');
+			$('.list').prepend($Li0);
+
+			var $Li2=$('<li>li2</li>');
+			$('.item1').after($Li2);
+
+			var $Li4=$('<li>li4</li>');
+			$('.item7').replaceWith($Li4);
+
+			var $Li6=$('<li>li6</li>');
+			$('.item5').after($Li6);
+
+		})
+	})
+</script>
+</html>

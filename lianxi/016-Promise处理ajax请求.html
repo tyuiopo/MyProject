@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Promise处理ajax请求</title>
+</head>
+<body>
+	
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	let getDataPronise=(url)=>{
+		return new Promise((resolve,reject)=>{
+			$.get(url,data=>{
+				resolve(data)
+			})
+		})
+	}
+	let promise=getDataPronise('https://api.github.com/users/kuazhu');
+		promise
+		.then(data1=>{
+			// console.log(data1);
+			return getDataPronise(data1.kuazhu_url);
+		})
+		.then(data2=>{
+			// console.log(data2)
+			console.log(data2.userInof.phonenNum);
+
+		})
+</script>
+</html>

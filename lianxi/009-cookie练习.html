@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie练习</title>
+</head>
+<body>
+	
+</body>
+<script>
+	// document.cookie = "name=tom;max-age=259200"
+	// document.cookie='name=tom'
+    function cookie(key,value,iDate){
+	    var oDate = new Date();
+	    oDate.setDate(oDate.getDate() + iDate);
+	    document.cookie = key+"="+value+";expires="+oDate;
+    }
+    cookie(name,tom,'2019-03-12 00:00:00')
+</script>
+</html>
