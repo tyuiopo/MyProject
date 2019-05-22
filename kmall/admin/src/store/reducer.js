@@ -8,6 +8,7 @@ import { reducer as homeReducer  } from 'pages/home/store'
 import { reducer as userReducer  } from 'pages/user/store'
 import { reducer as categoryReducer  } from 'pages/category/store'
 import { reducer as productReducer  } from 'pages/product/store'
+import { reducer as orderReducer  } from 'pages/order/store'
 
 export default combineReducers({
 	//3.属性login就是合并和整个顶层数据(state)的一个属性,值loginReducer就是该属性的值
@@ -17,4 +18,5 @@ export default combineReducers({
 	user:userReducer,
 	category:categoryReducer,
 	product:productReducer,
+	order:orderReducer
 })
