@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="../../images/index/6.jpg"></image>
+      <text class="userinfo-nickname">Jack</text>
+  </view>
+  <!-- 绑定事件 -->
+  <view class="usermotto" bindtap='tapMotton'>
+    <text class="user-motto">开启旅行</text>
+  </view>
+</view>
