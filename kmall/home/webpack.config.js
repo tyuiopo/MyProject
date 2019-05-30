@@ -6,7 +6,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const publicPath = "/";
 
-
 const getHtmlConfig = (name,title)=>({
     template:'./src/view/'+name+'.html',//模板文件
     filename:name+'.html',//输出的文件名
@@ -15,7 +14,6 @@ const getHtmlConfig = (name,title)=>({
     hash:true,//给生成的js/css文件添加一个唯一的hash
     chunks:['common',name]
 })
-
 
 
 module.exports = {

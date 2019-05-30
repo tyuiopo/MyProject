@@ -67,9 +67,11 @@ app.use((req,res,next)=>{
 	next();	
 });
 
+
 //添加处理post请求的中间件
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 
 //处理路由
 app.use("/admin",require('./routes/admin.js'));
