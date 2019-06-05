@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.father{
+			width: 400px;
+			height: 400px;
+			margin-top: 50px;
+			background: #ccc;
+			overflow: hidden;
+		}
+		.son{
+			width: 100px;
+			height: 100px;
+			margin-top: 50px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+<script>
+	var a = 2;
+	function test(){
+		console.log(a)
+	}
+	function use(){
+		var a = 1;
+		test()
+	}
+	use();
+</script>
+</html>
